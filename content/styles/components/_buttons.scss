@@ -1,0 +1,97 @@
+.btn {
+  font-weight: 500;
+  border-radius: 0;
+  padding: .9em 1.8em;
+  outline: none;
+  border: none;
+}
+
+.top-navigation .btn-donate {
+  min-width: auto;
+  text-transform: none;
+}
+
+.dropdown-toggle {
+  :after {
+    content: none;
+  }
+}
+
+.btn-primary {
+  background-color: $blood-orange;
+  color: $white;
+  box-shadow: none;
+  border-radius: 0;
+
+  &:hover, &:active, &:focus {
+    background-color: $hover-orange;
+    color: $white;
+  }
+
+}
+
+.btn-secondary {
+  background-color: $light-green;
+  color: $black;
+  text-transform: none;
+  width: auto;
+  border: none;
+
+  &:hover {
+    background-color: $hover-green;
+    color: $black;
+  }
+}
+
+.btn-donate {
+  padding: 2px 11px 2px 15px;
+  margin: 0;
+  background-color: $blood-orange;
+  color: $white;
+  box-shadow: none;
+  text-transform: none;
+
+  &:hover, &:active, &:focus {
+    background-color: $hover-orange;
+    color: $white;
+  }
+
+  &.btn-donate-top::after {
+    display: none;
+  }
+}
+
+.btn-block {
+  display: block;
+  width: auto;
+}
+
+.btn-action {
+  box-shadow: none;
+}
+
+.load-more {
+  margin-left: 15px !important;
+
+  @include small-and-up {
+    margin-left: 0 !important;
+  }
+}
+
+.share-buttons {
+  display: flex;
+
+  .share-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    margin-left: .2em;
+    border-radius: 0;
+    box-shadow: none;
+
+    .icon {
+      top: unset;
+      position: unset;
+    }
+  }
+}
