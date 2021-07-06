@@ -1243,7 +1243,7 @@ img {
   height: auto;
 }
 
-figcaption {
+.wp-block-image figcaption {
   text-align: center;
   color: #6a6a6a;
   line-height: 1.2;
@@ -1251,7 +1251,7 @@ figcaption {
   font-size: 0.875rem;
 }
 @media (min-width: 992px) {
-  figcaption {
+  .wp-block-image figcaption {
     font-size: 1rem;
   }
 }
@@ -1633,6 +1633,10 @@ nav#header ul#navbar-dropdown ul#donate-button-wrapper #dropdownDonateMenu .drop
   color: #ffffff;
   background-color: #003300;
   border-color: #003300;
+}
+
+.has-shadow {
+  box-shadow: 0 -5px 5px 0 rgba(0, 0, 0, 0.02), 0 5px 8px 0 rgba(0, 0, 0, 0.16), 10px 5px 8px 0 rgba(0, 0, 0, 0.04), -10px 5px 8px 0 rgba(0, 0, 0, 0.04);
 }
 
 .page-template-page-news .search-result-item-image {
