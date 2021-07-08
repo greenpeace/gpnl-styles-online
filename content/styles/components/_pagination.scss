@@ -1,3 +1,5 @@
+@use "../abstracts/colors";
+
 .gpnl-pagination {
   .page-item {
     .page-link {
@@ -5,8 +7,8 @@
 
       &.prev, &.next {
         //color: $white;
-        background-color: $light-green;
-        border-color: $light-green;
+        background-color: colors.$light-green;
+        border-color: colors.$light-green;
         @media (max-width: #{$medium-width}) {
           padding: .5rem 1rem;
           font-weight: bold;
@@ -24,9 +26,9 @@
 
     &.active .page-link {
       font-weight: 700;
-      color: $white;
-      background-color: $dark-green;
-      border-color: $dark-green;
+      color: colors.$white;
+      background-color: colors.$dark-green;
+      border-color: colors.$dark-green;
     }
   }
 }

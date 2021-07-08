@@ -1,4 +1,4 @@
-@import "../base/variables";
+@use "../abstracts/colors";
 
 .counter-block {
 
@@ -10,21 +10,21 @@
   &.counter-style-bar, &.counter-style-arc, &.counter-style-plain {
     .content-counter {
       .progress-container {
-        background-color: $light-grey;
+        background-color: colors.$light-grey;
         margin-bottom: unset;
 
         .progress-bar {
-          background-color: $dark-green;
+          background-color: colors.$dark-green;
         }
       }
 
       .progress-arc {
         .background {
-          stroke: $light-grey;
+          stroke: colors.$light-grey;
         }
 
         .foreground {
-          stroke: $dark-green;
+          stroke: colors.$dark-green;
         }
       }
 
@@ -48,21 +48,21 @@
       &.counter-style-bar, &.counter-style-arc, &.counter-style-plain {
         .content-counter {
           .progress-container {
-            background-color: $warm-light-grey;
+            background-color: colors.$warm-light-grey;
             margin-bottom: unset;
 
             .progress-bar {
-              background-color: $hover-green;
+              background-color: colors.$hover-green;
             }
           }
 
           .progress-arc {
             .background {
-              stroke: $warm-light-grey;
+              stroke: colors.$warm-light-grey;
             }
 
             .foreground {
-              stroke: $hover-green;
+              stroke: colors.$hover-green;
             }
           }
         }
@@ -75,21 +75,21 @@
       &.counter-style-bar, &.counter-style-arc, &.counter-style-plain {
         .content-counter {
           .progress-container {
-            background-color: $warm-light-grey;
+            background-color: colors.$warm-light-grey;
             margin-bottom: unset;
 
             .progress-bar {
-              background-color: $dark-green;
+              background-color: colors.$dark-green;
             }
           }
 
           .progress-arc {
             .background {
-              stroke: $warm-light-grey;
+              stroke: colors.$warm-light-grey;
             }
 
             .foreground {
-              stroke: $dark-green;
+              stroke: colors.$dark-green;
             }
           }
         }

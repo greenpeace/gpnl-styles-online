@@ -1,12 +1,13 @@
-@import "../base/variables";
+@use "../abstracts/colors";
+@use "../abstracts/variables";
 
 .gpnl-notification {
-  background: $anthracite;
+  background: colors.$anthracite;
   color: white;
   font-weight: 400;
-  padding: $xlrg $sm;
+  padding: variables.$xlrg variables.$sm;
 
   a {
-    color: $light-green;
+    color: colors.$light-green;
   }
 }

@@ -1,11 +1,13 @@
+@use "../abstracts/colors";
+
 .four-column {
-  background: $white;
+  background: colors.$white;
   padding: 50px 15px 40px;
   margin: 0;
 
   h3, h4, h5 {
     font-weight: 400 !important;
-    color: $black;
+    color: colors.$black;
   }
 }
 
@@ -17,7 +19,7 @@
   flex-basis: 100rem;
 
   h5 a {
-    color: $black;
+    color: colors.$black;
     font-weight: 400;
   }
 }
@@ -44,10 +46,10 @@
 }
 
 .four-column-information a {
-  color: $dark-green;
+  color: colors.$dark-green;
 
   &:hover {
-    color: $hover-green;
+    color: colors.$hover-green;
     text-decoration: none;
   }
 }

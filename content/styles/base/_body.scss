@@ -1,6 +1,7 @@
-@use "variables";
+@use "../abstracts/variables";
+@use "../abstracts/colors";
 
-@import "mixins";
+@import "../abstracts/mixins";
 
 html > iframe:first-child {
   display: none;
@@ -9,7 +10,7 @@ html > iframe:first-child {
 html,
 body {
   overflow-x: hidden;
-  background: variables.$warm-light-grey;
+  background: colors.$warm-light-grey;
 }
 
 h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
@@ -23,7 +24,7 @@ h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
 body {
   font-family: $roboto !important;
   font-size: 1rem;
-  color: $black;
+  color: colors.$black;
   position: relative;
 
   h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
@@ -44,7 +45,7 @@ body {
   }
 
   &.white-bg {
-    background-color: $white !important;
+    background-color: colors.$white !important;
   }
 
   &.brown-bg {

@@ -1,7 +1,8 @@
-@import "../base/variables";
+@use "../abstracts/colors";
+@use "../abstracts/mixins";
 
 .cookie-notice {
-  background: $anthracite;
+  background: colors.$anthracite;
   height: auto;
   flex-direction: column;
 
@@ -11,7 +12,7 @@
     padding: 0;
 
     a {
-      color: $light-green;
+      color: colors.$light-green;
       text-decoration: none;
 
       &:hover {
@@ -21,20 +22,20 @@
   }
 
   button.btn {
-    background-color: $blood-orange;
+    background-color: colors.$blood-orange;
     height: 2.4rem;
     border-radius: .25rem;
     color: white;
     align-self: end;
 
     &:hover {
-      background-color: $hover-orange;
-      outline: $hover-orange;
+      background-color: colors.$hover-orange;
+      outline: colors.$hover-orange;
       border: none;
     }
   }
 
-  @include medium-and-up {
+  @include mixins.medium-and-up {
     width: 350px;
     bottom: 16px;
     right: 16px;

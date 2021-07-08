@@ -1,4 +1,4 @@
-@import "../base/variables.scss";
+@use "../abstracts/colors";
 
 .gpnl-newsletter__block {
   overflow: hidden;
@@ -7,7 +7,7 @@
   width: 100vw;
   height: unset;
   margin: 32px calc(50% - 50vw) 0;
-  background-color: $sea-blue;
+  background-color: colors.$sea-blue;
   z-index: 2;
 
   .gpnl-newsletter__text {
@@ -25,7 +25,7 @@
       color: white;
       width: max-content;
       padding: 15px;
-      background-color: $dark-green;
+      background-color: colors.$dark-green;
       max-width: 100%;
     }
   }

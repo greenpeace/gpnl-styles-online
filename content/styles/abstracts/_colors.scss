@@ -1,12 +1,12 @@
 // main colours:
 $black: #000000;
 $white: #ffffff;
-$blood-orange: #f36d3a;
+$blood-orange: #f3593c;
 $light-green: #66cc00;
 $dark-green: #003300;
 $hover-green: #1d8c61;
-$hover-red: #c02a0c;
-$hover-orange: #f3593c;
+$hover-orange: #c63d23;
+//$hover-red: #c02a0c;
 
 // Basic website SECONDARY COLOURS:
 $anthracite:      #323842;
@@ -19,3 +19,16 @@ $sky-blue:        #aec7ca;
 $light-blue:      #d7e2e4;
 $light-grey:      #dadbdc;
 $warm-light-grey: #eaeaea;
+
+// Aliases for secondary colours:
+$grey-1: $warm-light-grey;
+$grey-2: $light-grey;
+$grey-3: $medium-grey;
+$grey-4: $dark-grey;
+$grey-5: $slate-grey;
+$grey-6: $anthracite;
+
+$blue-1: $light-blue;
+$blue-2: $sky-blue;
+$blue-3: $sea-blue;
+$blue-4: $dark-blue;

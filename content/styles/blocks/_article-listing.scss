@@ -1,3 +1,5 @@
+@use "../abstracts/colors";
+
 // TODO align article-list with margins above
 // TODO check typography
 .articles-block {
@@ -34,7 +36,7 @@
 
         &:hover {
           text-decoration: none;
-          color: $hover-green;
+          color: colors.$hover-green;
         }
       }
 
@@ -73,10 +75,10 @@
 
           .tag-item {
             font-size: 0.875rem;
-            color: $light-grey;
+            color: colors.$light-grey;
             display: inline-block;
             padding: 3px;
-            border: 1px solid $light-grey;
+            border: 1px solid colors.$light-grey;
             margin-right: 15px !important;
           }
         }

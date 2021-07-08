@@ -1,5 +1,5 @@
-@use "../base/variables";
-@import "buttons";
+@use "../abstracts/colors";
+//@import "buttons";
 
 // Breakpoint where links in dropdown (hamburger) menu turn into inline menu
 $nav-breakpoint: 992px;
@@ -19,7 +19,7 @@ nav#header {
 
   .btn-navbar-toggle {
     background-color: white;
-    color: variables.$anthracite;
+    color: colors.$anthracite;
     height: auto;
   }
 
@@ -76,11 +76,11 @@ nav#header {
 
       &#country-select {
         .country-dropdown-toggle {
-          color: variables.$light-grey;
+          color: colors.$light-grey;
           height: var(--nav-height);
 
           @media only screen and (min-width: $nav-breakpoint) {
-            color: variables.$slate-grey;
+            color: colors.$slate-grey;
           }
 
           // Remove wonky caret
@@ -89,17 +89,17 @@ nav#header {
           }
 
           svg {
-            fill: variables.$medium-grey;
+            fill: colors.$medium-grey;
             height: 0.8em;
             width: auto;
             margin-left: 0.1em;
           }
 
           &:hover {
-            color: variables.$anthracite;
+            color: colors.$anthracite;
 
             svg {
-              fill: variables.$anthracite;
+              fill: colors.$anthracite;
             }
           }
         }
@@ -115,14 +115,14 @@ nav#header {
         width: 100%;
         padding: 0 calc(var(--nav-spacing));
         border: 0 !important; // GPI Override
-        color: variables.$slate-grey;
+        color: colors.$slate-grey;
         text-decoration: none;
 
         &:hover {
-          color: variables.$anthracite;
+          color: colors.$anthracite;
 
           &:after {
-            border-bottom: 0.25em solid variables.$light-green;
+            border-bottom: 0.25em solid colors.$light-green;
           }
         }
 
@@ -155,7 +155,7 @@ nav#header {
       }
 
       a {
-        color: variables.$light-grey;
+        color: colors.$light-grey;
 
         &:hover {
           color: white;
@@ -206,7 +206,7 @@ nav#header {
         }
 
         &[aria-expanded="true"] {
-          background-color: variables.$hover-orange;
+          background-color: colors.$hover-orange;
 
           svg {
             transform: rotate(0);

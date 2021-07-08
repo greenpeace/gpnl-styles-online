@@ -1,3 +1,5 @@
+@use "../abstracts/colors";
+
 .top-page-tags {
   .tag-item .tag-item--main .page-type {
     display: none;
@@ -32,23 +34,23 @@
 
   .tag-item--main, .tag-item--main.page-type {
     font-weight: 400;
-    color: $black;
-    background: $light-green;
+    color: colors.$black;
+    background: colors.$light-green;
     padding: 10px 20px;
 
     &:hover {
-      color: $black;
-      background: $hover-green;
+      color: colors.$black;
+      background: colors.$hover-green;
     }
   }
 
   .tag-item a {
-    color: $medium-grey;
+    color: colors.$medium-grey;
     padding: 2px 6px;
-    border: 1px solid grey;
+    border: 1px solid colors.$medium-grey;
 
     &:hover {
-      color: $dark-grey;
+      color: colors.$dark-grey;
       text-decoration: none;
     }
 

@@ -1,3 +1,5 @@
+@use "../abstracts/colors";
+
 .columns-block {
   .page-section-header, .page-section-description {
     margin: 0;
@@ -42,10 +44,10 @@
 
   .call-to-action-link {
     font-weight: 700;
-    color: $dark-green;
+    color: colors.$dark-green;
 
     &:hover {
-      color: $hover-green;
+      color: colors.$hover-green;
       text-decoration: none;
     }
   }
@@ -53,10 +55,10 @@
   .column-wrap {
     a {
       font-weight: 700;
-      color: $black;
+      color: colors.$black;
 
       &:hover {
-        color: $hover-green;
+        color: colors.$hover-green;
         text-decoration: none;
       }
     }
@@ -117,15 +119,15 @@
     .row {
       padding: 0 0 15px;
       margin-top: 0;
-      background-color: $anthracite;
+      background-color: colors.$anthracite;
 
       h1, h2, h3, h4, h5, h6, a {
-        color: $white !important;
+        color: colors.$white !important;
         font-weight: 400 !important;
       }
 
       p {
-        color: $white !important;
+        color: colors.$white !important;
         font-weight: 300;
       }
 
@@ -143,12 +145,12 @@
 
   &.block-style-icons, &.block-style-image {
     .row {
-      background-color: $white;
+      background-color: colors.$white;
       padding-bottom: 15px;
     }
 
     h1, h2, h3, h4, h5, h6 {
-      color: $black !important;
+      color: colors.$black !important;
       font-weight: 400 !important;
 
       > a {
@@ -158,11 +160,11 @@
 
     .call-to-action-link {
       font-weight: 700;
-      color: $dark-green;
+      color: colors.$dark-green;
       font-size: 1rem;
 
       &:hover {
-        color: $hover-green;
+        color: colors.$hover-green;
         text-decoration: none;
       }
     }
@@ -175,18 +177,18 @@
 
 .block-style-tasks {
   .row {
-    background-color: $anthracite;
-    color: $white;
+    background-color: colors.$anthracite;
+    color: colors.$white;
   }
 }
 
 .columns-block.block-style-tasks .can-do-steps-mobile .card {
-  background-color: $anthracite;
+  background-color: colors.$anthracite;
   border-radius: 0;
 
   .card-block {
     p {
-      color: $white;
+      color: colors.$white;
     }
   }
 }

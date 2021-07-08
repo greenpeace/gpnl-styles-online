@@ -1,5 +1,7 @@
+@use "../abstracts/colors";
+
 .search {
-  background: $white;
+  background: colors.$white;
 
   .search-block {
     padding-top: 0;

@@ -1,3 +1,6 @@
+@use "../abstracts/variables";
+@use "../abstracts/colors";
+
 .cover-card {
   padding: 0;
   transition: none;
@@ -46,20 +49,20 @@
   .cover-card-heading {
     display: inline-block;
     font-weight: 500;
-    color: $black;
-    background: $white;
+    color: colors.$black;
+    background: colors.$white;
     width: 100%;
     margin: 0;
-    padding: $sm;
+    padding: variables.$sm;
     height: 110px;
     max-width: 100%;
     min-height: 100px;
-    border-top: 4px solid $light-green;
+    border-top: 4px solid colors.$light-green;
     text-decoration: none;
     text-shadow: none;
 
     &:hover {
-      color: $hover-green;
+      color: colors.$hover-green;
     }
   }
 
@@ -69,13 +72,13 @@
     left: auto;
     cursor: pointer;
     height: auto;
-    background: $blood-orange;
+    background: colors.$blood-orange;
     right: 20px;
     border: none;
     text-transform: none;
 
     &:hover {
-      background: $hover-orange;
+      background: colors.$hover-orange;
     }
 
     .cover-card-tag {
@@ -96,12 +99,12 @@
   .btn-secondary {
     text-transform: none;
     width: auto;
-    margin-top: $xsm;
+    margin-top: variables.$xsm;
   }
 
   .container {
-    padding-left: $sm;
-    padding-right: $sm;
+    padding-left: variables.$sm;
+    padding-right: variables.$sm;
   }
 
   .row.limit-visibility {
@@ -110,7 +113,7 @@
 }
 
 .btn-load-more-covers-click {
-  margin-left: $sm;
+  margin-left: variables.$sm;
 
   @include small-and-up {
     margin-left: 0;

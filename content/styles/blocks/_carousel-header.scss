@@ -1,6 +1,8 @@
+@use "../abstracts/colors";
+
 .carousel-header {
   margin-top: 3.75rem;
-  border-bottom: 3px solid $light-green;
+  border-bottom: 3px solid colors.$light-green;
 
   .carousel-item {
     .carousel-preview-wrap {
@@ -27,9 +29,9 @@
     padding-top: unset;
 
     h1 {
-      background-color: $white;
+      background-color: colors.$white;
       box-decoration-break: clone;
-      color: $black;
+      color: colors.$black;
       display: block;
       font-size: 2.875rem;
       line-height: 4.5rem;
@@ -46,7 +48,7 @@
       text-transform: uppercase;
       box-decoration-break: clone;
       padding: 0 18px;
-      background-color: $white;
+      background-color: colors.$white;
       width: auto;
       margin: 10px 0 $norm;
       max-width: fit-content;
@@ -55,10 +57,10 @@
     }
 
     .btn {
-      background-color: #f3593c;
+      background-color: colors.$blood-orange;
 
       &:hover {
-        background-color: $hover-red;
+        background-color: colors.$hover-orange;
       }
     }
 
@@ -67,9 +69,9 @@
       line-height: 1.6;
       display: block;
       margin: 0 0 15px 15px;
-      background: $dark-green;
+      background: colors.$dark-green;
       padding: 15px;
-      color: $white;
+      color: colors.$white;
       @media (max-width: 768px) {
         display: none;
       }

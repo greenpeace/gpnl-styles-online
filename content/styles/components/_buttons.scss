@@ -1,3 +1,5 @@
+@use "../abstracts/colors";
+
 .btn {
   font-weight: 500;
   border-radius: 0;
@@ -18,42 +20,42 @@
 }
 
 .btn-primary {
-  background-color: $blood-orange;
-  color: $white;
+  background-color: colors.$blood-orange;
+  color: colors.$white;
   box-shadow: none;
   border-radius: 0;
 
   &:hover, &:active, &:focus {
-    background-color: $hover-orange;
-    color: $white;
+    background-color: colors.$hover-orange;
+    color: colors.$white;
   }
 
 }
 
 .btn-secondary {
-  background-color: $light-green;
-  color: $black;
+  background-color: colors.$light-green;
+  color: colors.$black;
   text-transform: none;
   width: auto;
   border: none;
 
   &:hover {
-    background-color: $hover-green;
-    color: $black;
+    background-color: colors.$hover-green;
+    color: colors.$black;
   }
 }
 
 .btn-donate {
   padding: 2px 11px 2px 15px;
   margin: 0;
-  background-color: $blood-orange;
-  color: $white;
+  background-color: colors.$blood-orange;
+  color: colors.$white;
   box-shadow: none;
   text-transform: none;
 
   &:hover, &:active, &:focus {
-    background-color: $hover-orange;
-    color: $white;
+    background-color: colors.$hover-orange;
+    color: colors.$white;
   }
 
   &.btn-donate-top::after {

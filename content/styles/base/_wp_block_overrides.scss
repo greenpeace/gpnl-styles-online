@@ -1,4 +1,4 @@
-@use "variables";
+@use "../abstracts/colors";
 
 .wp-block-buttons {
   display: block;
@@ -28,11 +28,11 @@
     .wp-block-button__link {
       text-transform: uppercase;
       color: white !important;
-      background-color: variables.$blood-orange;
+      background-color: colors.$blood-orange;
 
       &:hover {
         color: white !important;
-        background-color: variables.$hover-orange;
+        background-color: colors.$hover-orange;
       }
     }
   }
@@ -40,11 +40,11 @@
   &.is-style-secondary {
     .wp-block-button__link {
       color: white !important;
-      background-color: variables.$dark-blue;
+      background-color: colors.$dark-blue;
 
       &:hover {
         color: white !important;
-        background-color: darken(variables.$dark-blue, 5%);
+        background-color: darken(colors.$dark-blue, 5%);
       }
     }
 

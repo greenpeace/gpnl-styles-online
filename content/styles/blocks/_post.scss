@@ -1,3 +1,5 @@
+@use "../abstracts/colors";
+
 article .page-header {
   padding-top: 32px !important;
 }
@@ -36,15 +38,15 @@ article .page-header {
       }
 
       a:link, a:active, a:visited {
-        color: $light-green;
+        color: colors.$light-green;
       }
 
       a:hover {
-        color: $hover-green;
+        color: colors.$hover-green;
       }
 
       a.btn-primary {
-        color: $white;
+        color: colors.$white;
       }
     }
   }
