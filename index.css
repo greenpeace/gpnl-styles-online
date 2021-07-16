@@ -12,16 +12,43 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-#table-of-contents {
-  padding: 0;
-  border-right: 1px solid #b4b5b8;
-  position: fixed;
+#nav-toggler {
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  #nav-toggler {
+    display: none;
+  }
+}
+
+#navbar {
+  width: 100%;
   top: 0;
   left: 0;
   bottom: 0;
-  height: 100vh;
-  width: 300px;
-  overflow-y: scroll;
+}
+@media only screen and (min-width: 768px) {
+  #navbar {
+    width: 300px;
+    position: fixed;
+    overflow-y: scroll;
+    height: 100vh;
+    display: block;
+  }
+}
+
+#table-of-contents {
+  padding: 0;
+  border-right: 1px solid #b4b5b8;
+  display: none;
+}
+#table-of-contents.open {
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  #table-of-contents {
+    display: block;
+  }
 }
 #table-of-contents ul {
   width: 100%;
@@ -51,7 +78,11 @@ body {
   max-width: 1200px;
   background-color: white;
   padding: 1rem 3rem;
-  margin-left: 300px;
+}
+@media only screen and (min-width: 768px) {
+  #manual-contents {
+    margin-left: 300px;
+  }
 }
 #manual-contents .subtitle {
   display: block;
