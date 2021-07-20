@@ -104,6 +104,32 @@ body {
   .example {
     padding: 1.5rem;
     border: .3rem solid #eeeef1;
+
+    .vertical-spacer {
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1;
+
+      &:before, &:after{
+        line-height: 1;
+        content: "";
+        flex: 1;
+        border-left: 1px dotted;
+      }
+
+      &:before {
+        margin: 0;
+      }
+
+      &:after {
+        margin: 0;
+      }
+
+    }
+
   }
 
   .colors-container {
