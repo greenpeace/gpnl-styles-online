@@ -236,6 +236,7 @@
 	
 	</div>
 	<h2>Formulieren</h2>
+	<p>Momenteel staan er alleen knoppen op onze website.</p>
 	<h3>Knoppen</h3>
 	<p>Knoppen hebben een <i>weight</i> van 500. Orange (of primaire) knoppen worden gebruikt voor het uitvoeren van een actie. Groene (of secundaire) knoppen zijn voor navigatie.</p>
 	<div class="example">
@@ -243,10 +244,14 @@
 		<button class="btn btn-secondary">Laad meer</button>
 	</div>
 	<h3>Tekstvelden</h3>
+	<p>Momenteel niet van toepassing.</p>
 	<h3>Selecties</h3>
+	<p>Momenteel niet van toepassing.</p>
 	
 	
 	<h2>Layout</h2>
+	<p>Pagina-indeling, schaduwgebruik en afstanden.</p>
+	
 	<h3>Schaduwen</h3>
 	<p>Een schaduw gebruiken we om dietpe te geven aan onderdelen die je los moet kunnen zien van de standaardpagina, zoals onderdelen die meebewegen wanneer je scrolt. Een goed voorbeeld hiervan is
 		de navigatiebalk.</p>
@@ -255,28 +260,32 @@
 		<div class="has-shadow" style="width: 100px; height: 100px;"></div>
 	</div>
 	<h3>Marges</h3>
-	<p>Voor de afstand tussen elementen gebruiken we de eenheid <strong>rem</strong> (de grootte ten opzichte van het <i>root element</i>, normaal gesproken 16px). De marge tussen twee tekstparagrafen
-		is <strong>1 rem</strong>. De marge aan de binnenkant van een sectie en tussen alle blokken (I, II, III, IV etc... in het voorbeeld hieronder) is <strong>1.5 rem</strong>.
-		De afstand tussen twee secties is <strong>3 rem</strong>.</p>
+	<p>Voor de afstand tussen elementen gebruiken we de eenheid <strong>rem</strong> (de grootte ten opzichte van het <i>root element</i>, normaal gesproken 16px). De standardmarges die we gebruiken
+		van groot naar klein:</p>
+	
+	<ul>
+		<li>De afstand tussen twee secties is <strong>3 rem</strong>.</li>
+		<li>De afstand tussen twee blokken binnen een sectie is <strong>1.5 rem</strong>.</li>
+		<li>Binnen een blok is de afstand tussen de rand en de tekst (of andere inhoud) <strong>1 rem</strong>.</li>
+	</ul>
 	
 	<div class="example">
 		<div style="width: 100%; background-color: #d0ebf3; padding: 1.5rem">
 			<strong style="width: 100%">Sectie A</strong>
 			<div style="display: flex; flex-wrap: wrap; margin: -0.75rem; margin-top: 0.25rem;">
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem"> I</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem"> II</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem"> III</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem"> IV</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem"> V</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem"> VI</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem"> VII</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem"> VIII</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem"> IIX</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem"> IX</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem"> X</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem"> XI</div>
+				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok I</div>
+				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok II</div>
+				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok III</div>
+				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok IV</div>
+				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok V</div>
+				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok VI</div>
+				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok VII</div>
+				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok VIII</div>
+				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok IIX</div>
+				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok IX</div>
+				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok X</div>
+				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok XI</div>
 			</div>
-		
 		</div>
 		<div style="height: 3rem">
 			<span class="vertical-spacer" style="width: 100%; height: 3rem">3rem</span>
@@ -284,8 +293,8 @@
 		<div style="width: 100%; background-color: #d0f3d6; padding: 1.5rem">
 			<strong style="width: 100%">Sectie B</strong>
 			<div style="display: flex; flex-wrap: wrap; margin: -0.75rem; margin-top: 0.25rem;">
-				<div style="margin:0.75rem; width: 240px; height: 100px; background-color: #add0ba; padding: 1rem"> I</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #add0ba; padding: 1rem"> II</div>
+				<div style="margin:0.75rem; width: 240px; height: 100px; background-color: #add0ba; padding: 1rem">Blok I</div>
+				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #add0ba; padding: 1rem">Blok II</div>
 			</div>
 		</div>
 	

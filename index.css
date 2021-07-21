@@ -89,6 +89,7 @@ body {
   margin-top: 0.4em;
 }
 #manual-contents .example {
+  margin-top: 1rem;
   padding: 1.5rem;
   border: 0.3rem solid #eeeef1;
 }
