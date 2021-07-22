@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>GPNL Huisstijl online</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	
@@ -20,7 +22,8 @@
 
 
 <nav id="navbar">
-	<img src="https://www.greenpeace.org/nl/wp-content/themes/planet4-master-theme/images/gp-logo.svg" alt="Greenpeace logo" style="margin: 1rem; width: auto">
+	
+	<img src="https://www.greenpeace.org/nl/wp-content/themes/planet4-master-theme/images/gp-logo.svg" alt="Greenpeace logo" class="logo">
 	
 	<button id="nav-toggler">
 		Menu
@@ -34,9 +37,9 @@
 	
 	<h1>Huisstijl online</h1>
 	
-	<p>Dit document dient als referentie voor 'hoe het hoort' online. De opmaak van dit document is tevens in de huisstijl. Om te zoeken in dit document kun je de zoekfunctie van je browser gebruiken
+	<p>Dit document dient ter referentie voor 'hoe het hoort' online. De opmaak van dit document is tevens in de huisstijl. Om te zoeken in dit document kun je de zoekfunctie van je browser gebruiken
 		(<em>ctrl</em>+f).</p>
-	<p><strong style="color: red">NB Er wordt nog aan dit document gewerkt, het is nog geenszins af of correct!</strong></p>
+	<p><strong style="color: red">NB Er wordt nog aan dit document gewerkt, het is nog niet compleet.</strong></p>
 	
 	
 	<h2>Typografie</h2>
@@ -46,15 +49,15 @@
 	<h3>Algemeen</h3>
 	<p>
 		Het lettertype dat we gebruiken is <a href="https://fonts.google.com/specimen/Roboto" target="_blank">Roboto</a>. De Lettergrootte wordt bepaald door het apparaat waar de gebruiker de website
-		op bekijkt. Standaard is de grootte 1rem, oftewel de standaardgrootte van de browser. Dit is normaal gesproken 16px. Op grotere schermen is de grootte 1.2rem, oftewel 20% groter. Het 'gewicht'
-		of 'dikte' is 400 (<i>regular</i>). Koppen en links zijn dikgedrukt,
-		ze hebben een <em>weight</em> van 700. De regelafstand is 1.6em.
+		op bekijkt. Standaard is de grootte <code>1rem</code>, oftewel de standaardgrootte van de browser. Dit is normaal gesproken 16 pixels. Op grotere schermen is de grootte <code>1.2rem</code>, oftewel 20% groter. De 'dikte' (<i>weight</i>)
+		is <code>400</code> (<i>regular</i>). Koppen en links zijn dikgedrukt,
+		ze hebben een <i>weight</i> van <code>700</code>. De regelafstand is <code>1.6em</code>.
 	</p>
 	
 	<h3>Koppen</h3>
-	<p>Koppen hebben een <em>weight</em> van 700. De titel (h1) is in <em>all caps</em>. Elke pagina mag maar één titel hebben (een h1-tag). Probeer deze titel zo bondig mogelijk te houden. Elke
+	<p>Koppen hebben een <i>weight</i> van <code>700</code>. De titel (h1) is in <em>all caps</em>. Elke pagina mag maar één titel hebben (een <code> &lt;h1&gt;</code>). Probeer deze titel zo bondig mogelijk te houden. Elke
 		daaropvolgende kop (of tussenkop) moet een logische
-		HTML-tag zijn (h2, h3 etc.).</p>
+		HTML-tag zijn (<code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code> etc...).</p>
 	<div class="example">
 		<h1>Een h1 kop</h1>
 		<h2>Een h2 kop</h2>
@@ -225,6 +228,7 @@
 		</figure>
 	</div>
 	<h3>Video's</h3>
+	<p>Video's zijn embedded vanuit YouTube. Een onderschrift is optioneel.</p>
 	<div class="example">
 		
 		<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
@@ -238,7 +242,7 @@
 	<h2>Formulieren</h2>
 	<p>Momenteel staan er alleen knoppen op onze website.</p>
 	<h3>Knoppen</h3>
-	<p>Knoppen hebben een <i>weight</i> van 500. Orange (of primaire) knoppen worden gebruikt voor het uitvoeren van een actie. Groene (of secundaire) knoppen zijn voor navigatie.</p>
+	<p>Knoppen hebben een <i>weight</i> van <code>500</code>. Oranje (of primaire) knoppen worden gebruikt voor het uitvoeren van een actie. Groene (of secundaire) knoppen zijn voor navigatie.</p>
 	<div class="example">
 		<button class="btn btn-primary">Doe mee</button>
 		<button class="btn btn-secondary">Laad meer</button>
@@ -260,41 +264,34 @@
 		<div class="has-shadow" style="width: 100px; height: 100px;"></div>
 	</div>
 	<h3>Marges</h3>
-	<p>Voor de afstand tussen elementen gebruiken we de eenheid <strong>rem</strong> (de grootte ten opzichte van het <i>root element</i>, normaal gesproken 16px). De standardmarges die we gebruiken
+	<p>Voor de afstand tussen elementen gebruiken we de eenheid <strong>rem</strong> (de grootte ten opzichte van het <i>root element</i>, normaal gesproken 16 pixels). De standardmarges die we gebruiken
 		van groot naar klein:</p>
 	
 	<ul>
-		<li>De afstand tussen twee secties is <strong>3 rem</strong>.</li>
-		<li>De afstand tussen twee blokken binnen een sectie is <strong>1.5 rem</strong>.</li>
-		<li>Binnen een blok is de afstand tussen de rand en de tekst (of andere inhoud) <strong>1 rem</strong>.</li>
+		<li>De afstand tussen twee secties is <code>3rem</code>.</li>
+		<li>De afstand tussen twee blokken binnen een sectie is <code>1.5rem</code>.</li>
+		<li>Binnen een blok is de afstand tussen de rand en de tekst (of andere inhoud) <code>1rem</code>.</li>
 	</ul>
 	
 	<div class="example">
-		<div style="width: 100%; background-color: #d0ebf3; padding: 1.5rem">
+		<div style="width: 100%; border: 1px solid lightgray; padding: 1.5rem">
 			<strong style="width: 100%">Sectie A</strong>
 			<div style="display: flex; flex-wrap: wrap; margin: -0.75rem; margin-top: 0.25rem;">
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok I</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok II</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok III</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok IV</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok V</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok VI</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok VII</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok VIII</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok IIX</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok IX</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok X</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #adc7d0; padding: 1rem">Blok XI</div>
+				<div style="margin:0.75rem; width: 400px; height: 100px; border: 1px solid lightgray; padding: 1rem">Blok I</div>
+				<div style="margin:0.75rem; width: 100px; height: 100px; border: 1px solid lightgray; padding: 1rem">Blok II</div>
+				<div style="margin:0.75rem; width: 200px; height: 100px; border: 1px solid lightgray; padding: 1rem">Blok III</div>
+				<div style="margin:0.75rem; width: 200px; height: 100px; border: 1px solid lightgray; padding: 1rem">Blok IV</div>
+				<div style="margin:0.75rem; width: 300px; height: 100px; border: 1px solid lightgray; padding: 1rem">Blok V</div>
 			</div>
 		</div>
 		<div style="height: 3rem">
 			<span class="vertical-spacer" style="width: 100%; height: 3rem">3rem</span>
 		</div>
-		<div style="width: 100%; background-color: #d0f3d6; padding: 1.5rem">
+		<div style="width: 100%; border: 1px solid lightgray; padding: 1.5rem">
 			<strong style="width: 100%">Sectie B</strong>
 			<div style="display: flex; flex-wrap: wrap; margin: -0.75rem; margin-top: 0.25rem;">
-				<div style="margin:0.75rem; width: 240px; height: 100px; background-color: #add0ba; padding: 1rem">Blok I</div>
-				<div style="margin:0.75rem; width: 100px; height: 100px; background-color: #add0ba; padding: 1rem">Blok II</div>
+				<div style="margin:0.75rem; width: 100px; height: 100px; border: 1px solid lightgray; padding: 1rem">Blok II</div>
+				<div style="margin:0.75rem; width: 240px; height: 100px; border: 1px solid lightgray; padding: 1rem">Blok I</div>
 			</div>
 		</div>
 	

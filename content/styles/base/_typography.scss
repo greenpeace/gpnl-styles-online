@@ -129,3 +129,9 @@ a {
   width: 1px;
   word-wrap: normal !important;
 }
+
+code {
+  background-color: colors.$grey-1;
+  color: black;
+  padding: 0.2em 0.4em;
+}
